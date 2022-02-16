@@ -3,18 +3,24 @@
 <form class="form mt-4" [formGroup]="newUserForm" (submit)="register()">
 	<div class="form-group">
 		<input class="form-control" type="text" placeholder="E-mail" formControlName="email">
+		<app-message *ngIf="newUserForm.get('email')?.errors?.['required'] && newUserForm.get('email')?.touched" message="E-mail obrigatório"></app-message>
+		<app-message *ngIf="newUserForm.get('email')?.errors?.['email'] && newUserForm.get('email')?.touched" message="E-mail no formato incorreto"></app-message>
 	</div>
 
 	<div class="form-group">
 		<input class="form-control" type="text" placeholder="Nome completo" formControlName="fullName">
+		<app-message *ngIf="newUserForm.get('fullName')?.errors && newUserForm.get('fullName')?.touched" message="Nome completo incorreto"></app-message>
 	</div>
 
 	<div class="form-group">
 		<input class="form-control" type="text" placeholder="Nome de usuário" formControlName="userName">
+		<app-message *ngIf="newUserForm.get('userName')?.errors?.['lowercase'] && newUserForm.get('userName')?.touched" message="Nome de usuário deve conter apenas caracteres minúsculos"></app-message>
+		<app-message *ngIf="newUserForm.get('userName')?.errors?.['userExists']" message="Nome de usuário já existente"></app-message>
 	</div>
 
 	<div class="form-group">
 		<input class="form-control" type="password" placeholder="Senha" formControlName="password">
+		<app-message *ngIf="newUserForm.errors?.['equalsUserNamePassword']" message="Senha deve ser diferente do nome de usuário"></app-message>
 	</div>
 
 	<button class="btn btn-primary btn-block">Registrar</button>

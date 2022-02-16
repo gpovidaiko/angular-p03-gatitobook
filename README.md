@@ -37,3 +37,15 @@ Visão geral sobre:
 - Criação do formulário de modelo, criado no componente através do serviço _FormBuilder_.
 - Criação de _service_ vinculada ao componente de registro de usuário para consumo da _API_.
 - Interface para representar o modelo de dados de um novo usuário.
+
+## 04. Validação de formulário assíncrono
+
+Implementações de validação sobre o formulário de registro de novo usuário.
+Visão geral sobre:
+
+- Utilização das validações padrões fornecidas pelo _Angular_, como _required_ e _minLength_.
+- Utilização de validações estáticas de um campo específico, como a _lowercase_, criada para o campo _userName_.
+- Utilização de validações para vários campos do formulário, como a _equalsUserNamePassword_, cirada para validar se os campos _userName_ e _password_ são iguais.
+- Utilização de validações assíncronas, como a criada para checar se já existe um usuário criado com o nome informado.
+- Conclusão do registro de um novo usuário e redirecionamento para a tela de login em caso de sucesso.
+  
