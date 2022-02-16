@@ -48,4 +48,14 @@ Visão geral sobre:
 - Utilização de validações para vários campos do formulário, como a _equalsUserNamePassword_, cirada para validar se os campos _userName_ e _password_ são iguais.
 - Utilização de validações assíncronas, como a criada para checar se já existe um usuário criado com o nome informado.
 - Conclusão do registro de um novo usuário e redirecionamento para a tela de login em caso de sucesso.
-  
+
+## 05. Autenticação
+
+Implementações sobre manipulação do token _JWT_ retornado pela auntenticação na _API_.
+Visão geral sobre:
+
+- Manipulação do _localStorage_ para armazenar o _token_.
+- Alteração no serviço de autenticação para ler o _token_ retornado no cabeçalho da requisição de autenticação.
+- Serviço de usuário para cuidar dos processos de login e logout.
+- Criação de cabeçalho.
+- Criação de rodapé.
