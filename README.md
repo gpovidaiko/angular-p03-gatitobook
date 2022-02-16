@@ -14,7 +14,7 @@ Visão geral sobre:
 
 ## 02. Login
 
-Desenvolvimento do serviço _authentication_, do componente _message_ e de seus respectivos módilos.
+Desenvolvimento do serviço _authentication_, do componente _message_ e de seus respectivos módulos.
 Visão geral sobre:
 
 - _Template Driven Form_ para desenvolver o formulário de autenticação do compoente de _login_.
@@ -25,3 +25,15 @@ Visão geral sobre:
 - Comunicação com a _API_ de _backend_ para autenticação na aplicação.
 - Tratamento de erro no retorno da comunicação com a _API_.
 - Redirecionamento de rota no sucesso do retorno da comunicação com a _API_.
+
+## 03. Cadastro de usuário
+
+Desenvolvimento do componente _new-user_ no módulo _home_ para o registro de novos usuários.
+Visão geral sobre:
+
+- _Reactive Form_ para desenvolver o formulário de registro de novo usuário.
+- Configuração dos campos com _formControlName_.
+- Configuração do formulário com _formGroup_.
+- Criação do formulário de modelo, criado no componente através do serviço _FormBuilder_.
+- Criação de _service_ vinculada ao componente de registro de usuário para consumo da _API_.
+- Interface para representar o modelo de dados de um novo usuário.
