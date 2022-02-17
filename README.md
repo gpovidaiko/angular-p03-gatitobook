@@ -2,6 +2,14 @@
 
 Aplicação para estudo de Angular. Módulo de boas práticas em arquitetura e formulários. Tem como premissa uma rede social para amantes de gatos.
 
+
+## GatitoBook _API_
+
+A _API_ utilizada no projeto pode ser encontrada no seguinte link:
+https://github.com/alura-cursos/angular_formularios/archive/main.zip
+
+Após descompactar a pasta, entre pela sua linha de comando na pasta _'api'_, use o comando _npm i_, para instalar as dependências do back-end, e execute-o com o comando _npm start_.
+
 ## 01. Home
 
 Desenvolvimento do módulo e do componente _home_ e do componente de _login_.
