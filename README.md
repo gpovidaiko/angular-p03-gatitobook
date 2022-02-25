@@ -21,3 +21,12 @@ Visão geral sobre:
 - Configuração de _header_ de requisição, para o transporte do _token_ de autenticação, utlizando o objeto _HttpReades_.
 - Utilização dos arquivos _enviroments/*.ts_ para cetralizar informações sobre comunicação com a _API_.
 
+## 02. Lista de animais
+
+Desenvolvimento do componente _photo-grid_ e das guardas de rota _authentication_ e _login_.
+Visão geral sobre:
+
+- Criação de páginas com componentes reutilizáveis.
+- Utilização do operador _switchMap_ para concatenar dois fluxos de informação.
+- Utilização da guarda de rota _authentication_ para impedir o acesso a páginas que exigem autenticação.
+- Utilização da guarda de rota _login_ para impedir o acesso a página de login se o usuário já estiver logado.
