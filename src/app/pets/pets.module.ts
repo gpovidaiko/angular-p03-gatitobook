@@ -6,13 +6,15 @@ import { ListPetsComponent } from './list-pets/list-pets.component';
 import { PetComponent } from './pet/pet.component';
 import { PhotoGridComponent } from './photo-grid/photo-grid.component';
 import { CardModule } from '../components/card/card.module';
+import { PetDetailComponent } from './pet-detail/pet-detail.component';
 
 
 @NgModule({
   declarations: [
     ListPetsComponent,
     PetComponent,
-    PhotoGridComponent
+    PhotoGridComponent,
+    PetDetailComponent
   ],
   imports: [
     CommonModule,

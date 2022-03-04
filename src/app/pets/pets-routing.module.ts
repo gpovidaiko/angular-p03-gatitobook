@@ -1,11 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListPetsComponent } from './list-pets/list-pets.component';
+import { PetDetailComponent } from './pet-detail/pet-detail.component';
 
 const routes: Routes = [
 	{
 		path: '',
-		component: ListPetsComponent
+		component: ListPetsComponent,
+	},
+	{
+		path: ':id',
+		component: PetDetailComponent,
 	}
 ];
 

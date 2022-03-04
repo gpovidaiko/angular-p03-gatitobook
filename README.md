@@ -30,3 +30,15 @@ Visão geral sobre:
 - Utilização do operador _switchMap_ para concatenar dois fluxos de informação.
 - Utilização da guarda de rota _authentication_ para impedir o acesso a páginas que exigem autenticação.
 - Utilização da guarda de rota _login_ para impedir o acesso a página de login se o usuário já estiver logado.
+
+## 03. Detalhe do animal
+
+Desenvolvimento do componente _pet-detail_ e do _interceptor_ de autenticação.
+Visão geral sobre:
+
+- Passagem de parâmentros de rota e leitura desses parâmetros através do serviço _ActivatedRoute_.
+- Como centralizar a configuração do _token_ nos cabeçalhos das requisições através do serviço de tipo _interceptor_.
+- Criação de método de exclusão de uma foto.
+- Criação do método de 'curtir' de uma foto.
+- Utilização do operador _mapTo_ para retornar um valor específico ao sucesso de uma operação.
+- Utilização do operador _catchError_ para tratamentos de retornos inesperados de uma operação.
