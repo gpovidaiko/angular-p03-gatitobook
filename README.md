@@ -42,3 +42,15 @@ Visão geral sobre:
 - Criação do método de 'curtir' de uma foto.
 - Utilização do operador _mapTo_ para retornar um valor específico ao sucesso de uma operação.
 - Utilização do operador _catchError_ para tratamentos de retornos inesperados de uma operação.
+
+## 04. Comentários
+
+Desenvolvimento do componente _comments_ e do _resolver_ de lista de animais para o componente _list-pets_.
+Visão geral sobre:
+
+- Criação de método de consulta de comentários.
+- Criação de método de adição de comentários.
+- Como resetar um formulário após uma operação.
+- Utilização do operador _tap_ para execuções após uma requisição.
+- Utilização de um serviço de tipo _resolver_ para carregar a lista de animais antes de renderizar o componente _list-pets_.
+- Refatoração do componente _list-pets_ para obter a lista de animais fonecida pelo _resolver_.

@@ -1,12 +1,14 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { PetsRoutingModule } from './pets-routing.module';
-import { ListPetsComponent } from './list-pets/list-pets.component';
-import { PetComponent } from './pet/pet.component';
-import { PhotoGridComponent } from './photo-grid/photo-grid.component';
+import { NgModule } from '@angular/core';
 import { CardModule } from '../components/card/card.module';
+import { SharedModule } from '../shared/shared.module';
+import { ListPetsComponent } from './list-pets/list-pets.component';
+import { CommentsComponent } from './pet-detail/comments/comments.component';
 import { PetDetailComponent } from './pet-detail/pet-detail.component';
+import { PetComponent } from './pet/pet.component';
+import { PetsRoutingModule } from './pets-routing.module';
+import { PhotoGridComponent } from './photo-grid/photo-grid.component';
+
 
 
 @NgModule({
@@ -14,12 +16,14 @@ import { PetDetailComponent } from './pet-detail/pet-detail.component';
     ListPetsComponent,
     PetComponent,
     PhotoGridComponent,
-    PetDetailComponent
+    PetDetailComponent,
+    CommentsComponent
   ],
   imports: [
     CommonModule,
     PetsRoutingModule,
-	CardModule
+	CardModule,
+	SharedModule
   ]
 })
 export class PetsModule { }
