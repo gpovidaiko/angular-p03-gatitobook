@@ -54,3 +54,12 @@ Visão geral sobre:
 - Utilização do operador _tap_ para execuções após uma requisição.
 - Utilização de um serviço de tipo _resolver_ para carregar a lista de animais antes de renderizar o componente _list-pets_.
 - Refatoração do componente _list-pets_ para obter a lista de animais fonecida pelo _resolver_.
+
+## 05. Novo animal
+
+Desenvolvimento do componente _menu_ e do _new-pet_.
+Visão geral sobre:
+
+- CSS específico de um componente.
+- Upload de arquivos.
+- Monitoramento de progresso de uma requisição de upload, através das configurações de _options_ de um método _post_ do serviço _HttpClient_.

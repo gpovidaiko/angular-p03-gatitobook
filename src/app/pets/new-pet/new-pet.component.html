@@ -1,0 +1,45 @@
+<div class="container">
+	<form class="row" [formGroup]="form" (submit)="upload()">
+		<div class="col-md-6 text-center">
+			<div class="form-group" *ngIf="!preview; else previewImage">
+				<input #fileInput type="file" formControlName="file" accept="image/*" (change)="load($event.target)" hidden />
+
+				<button class="btn btn-primary" type="button" (click)="fileInput.click()">
+					<i class="fa fa-image fa-4x align-middle"></i>
+				</button>
+
+				<app-message *ngIf="!!form.get('file')?.errors?.['required']" message="Por favor, selecione uma foto!" ></app-message>
+			</div>
+
+			<ng-template #previewImage>
+				<app-pet [imgUrl]="preview" title="Preview"></app-pet>
+			</ng-template>
+		</div>
+
+		<div class="col-md-6">
+			<div class="form-group">
+				<textarea class="form-control form-control-sm" formControlName="description" placeholder="Descrição"></textarea>
+
+				<app-message *ngIf="!!form.get('description')?.errors?.['maxlength']" message="Tamanho máximo de 300 caracteres" ></app-message>
+			</div>
+
+			<div class="form-group">
+				<label class="text-muted">
+					Permite comentário
+					<input type="checkbox" formControlName="allowComments" />
+				</label>
+			</div>
+
+			<div *ngIf="!progress; else progressDisplay">
+				<button class="btn btn-primary btn-block" [disabled]="form.invalid" type="submit">Carregar</button>
+				<a class="btn btn-secondary btn-block" routerLink="['pets']">Cancelar</a>
+			</div>
+
+			<ng-template #progressDisplay>
+				<div class="text-center display-4">
+					Progresso {{ progress }} %
+				</div>
+			</ng-template>
+		</div>
+	</form>
+</div>

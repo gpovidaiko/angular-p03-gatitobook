@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ListPetsComponent } from './list-pets/list-pets.component';
 import { ListPetsResolver } from './list-pets/list-pets.resolver';
+import { NewPetComponent } from './new-pet/new-pet.component';
 import { PetDetailComponent } from './pet-detail/pet-detail.component';
 
 const routes: Routes = [
@@ -11,6 +12,10 @@ const routes: Routes = [
 		resolve: {
 			pets: ListPetsResolver
 		}
+	},
+	{
+		path: 'new',
+		component: NewPetComponent
 	},
 	{
 		path: ':id',

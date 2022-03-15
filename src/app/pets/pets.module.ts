@@ -8,6 +8,7 @@ import { PetDetailComponent } from './pet-detail/pet-detail.component';
 import { PetComponent } from './pet/pet.component';
 import { PetsRoutingModule } from './pets-routing.module';
 import { PhotoGridComponent } from './photo-grid/photo-grid.component';
+import { NewPetComponent } from './new-pet/new-pet.component';
 
 
 
@@ -17,7 +18,8 @@ import { PhotoGridComponent } from './photo-grid/photo-grid.component';
     PetComponent,
     PhotoGridComponent,
     PetDetailComponent,
-    CommentsComponent
+    CommentsComponent,
+    NewPetComponent
   ],
   imports: [
     CommonModule,
